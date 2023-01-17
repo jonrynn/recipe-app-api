@@ -30,4 +30,7 @@ create requirements.txt in vscode
  to run django, docker-compose run --rm app sh -c "django-admin startproject app ."
  to run new django project, to see on browser, docker-compose up, then go to 127.0.1.1:8000
 
+ for github actions, create .github/workflows/checks.yml
+ 
+
 
