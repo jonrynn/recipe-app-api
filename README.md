@@ -37,4 +37,5 @@ create requirements.txt in vscode
  after git clone, docker-compose build, then docker-compose run --rm app sh -c "django-admin startproject app .", look on browser
 
 for AWS, to install docker, sudo amazon-linux-extras install docker
+for AWS, to install git, sudo yum install git -y
 
