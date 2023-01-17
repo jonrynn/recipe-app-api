@@ -17,4 +17,17 @@ to set up docker to use django:
 cd recipe-app-api
 create requirements.txt in vscode
  create dockerfile
+ create .dockerignore file
+ create empty app directory that was used in dockerfile
+
+ to create docker container, docker build . (in root, recipe-app-api)
+ now, create docker-compose.yml in root
+ so now can use docker-compose build instead of docker build .
+ add flake8 as linting tool, docker-compose run --rm app sh -c "flake8"
+ for linting, create requirements.dev.txt
+ add .flake8 config file in app folder
+ to run flake8, docker-compose run --rm app sh -c "flake8"
+ to run django, docker-compose run --rm app sh -c "django-admin startproject app ."
+ to run new django project, to see on browser, docker-compose up, then go to 127.0.1.1:8000
+
 
