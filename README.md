@@ -40,5 +40,7 @@ for AWS, to install docker, sudo amazon-linux-extras install docker
 for AWS, to install git, sudo yum install git -y
 for AWS, to install docker-compose, 
 sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+for AWS, start docker daemon, sudo service docker start
+
 
 
