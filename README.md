@@ -32,10 +32,17 @@ create requirements.txt in vscode
 
  for github actions, create .github/workflows/checks.yml
 
+for testing, python manage.py test
+
+need to install postgres handler, which is a mess, because we need specific dependencies
+in order to compile psycop2 or whatever, first update dockerfile, then requirements.txt,
+then docker-compose build to rebuild the whole thing
+
  for setup in aws:
  check for docker
  after git clone, docker-compose build, then docker-compose run --rm app sh -c "django-admin startproject app .", look on browser
 
+look at his link to docker to install on linux
 for AWS, to install docker, sudo amazon-linux-extras install docker
 for AWS, to install git, sudo yum install git -y
 for AWS, to install docker-compose, 
