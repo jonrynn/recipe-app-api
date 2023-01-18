@@ -43,11 +43,19 @@ then docker-compose build to rebuild the whole thing
  after git clone, docker-compose build, then docker-compose run --rm app sh -c "django-admin startproject app .", look on browser
 
 look at his link to docker to install on linux
-for AWS, to install docker, sudo amazon-linux-extras install docker
-for AWS, to install git, sudo yum install git -y
-for AWS, to install docker-compose, 
-sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-for AWS, start docker daemon, sudo service docker start
+for AWS, go to this page to install Docker: 
+[https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
+use the convenience script, 
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+to install docker-compose, using https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+
+
+
 
 
 
