@@ -63,5 +63,7 @@ docker-compose --version
 
 
 
+python manage.py makemigrations
+python manage.py migrate
 
-
+change docker-compose to incorporate wait_for_db and migrate, change checks.yml to use wait_for_db
