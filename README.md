@@ -38,9 +38,15 @@ need to install postgres handler, which is a mess, because we need specific depe
 in order to compile psycop2 or whatever, first update dockerfile, then requirements.txt,
 then docker-compose build to rebuild the whole thing
 
+update settings.xml for postgres and add import os, then create core app
+docker-compose run --rm app sh -c "python manage.py startapp core"
+
  for setup in aws:
  check for docker
  after git clone, docker-compose build, then docker-compose run --rm app sh -c "django-admin startproject app .", look on browser
+ add core to installed_apps in settings.py
+ in core, set up management/commands directory -- any py files here will be
+ used by django when you call manage.py, eg wait_for_db
 
 look at his link to docker to install on linux
 for AWS, go to this page to install Docker: 
