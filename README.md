@@ -1,7 +1,7 @@
 # recipe-app-api
 dockeer hub, log in before running job
 
-create github project, public, add readme file, add .gitignore choose python, 
+create github project, public, add readme file, add .gitignore choose python,
 create repository
 
 cd /udemy, git clone https://github.com/jonrynn/recipe-app-api.git
@@ -49,9 +49,9 @@ docker-compose run --rm app sh -c "python manage.py startapp core"
  used by django when you call manage.py, eg wait_for_db
 
 look at his link to docker to install on linux
-for AWS, go to this page to install Docker: 
+for AWS, go to this page to install Docker:
 [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
-use the convenience script, 
+use the convenience script,
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
@@ -67,3 +67,8 @@ python manage.py makemigrations
 python manage.py migrate
 
 change docker-compose to incorporate wait_for_db and migrate, change checks.yml to use wait_for_db
+
+
+admin login
+admin@example.com
+test123
